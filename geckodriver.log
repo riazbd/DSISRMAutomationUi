@@ -1,0 +1,371 @@
+1616003225538	geckodriver	INFO	Listening on 127.0.0.1:51910
+1616003228674	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\riaz\\AppData\\Local\\Temp\\rust_mozprofilehlwAlc"
+[Parent 6832, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616003260929	Marionette	INFO	Listening on port 51918
+1616003261686	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1616003308895	Marionette	INFO	Stopped listening on port 51918
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616003316623	geckodriver	INFO	Listening on 127.0.0.1:58284
+1616003319383	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\riaz\\AppData\\Local\\Temp\\rust_mozprofilepxs51B"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616003329260	Marionette	INFO	Listening on port 58292
+JavaScript error: resource://activity-stream/lib/ASRouter.jsm, line 988: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIObserverService.removeObserver]
+1616003338056	Marionette	INFO	Stopped listening on port 58292
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616003495287	geckodriver	INFO	Listening on 127.0.0.1:58358
+1616003498430	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\riaz\\AppData\\Local\\Temp\\rust_mozprofileFmybEk"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616003503836	Marionette	INFO	Listening on port 58367
+1616003504494	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/CompanyWnd.aspx?CompanyId=0, line 1: unreachable code after return statement
+1616003558164	Marionette	INFO	Stopped listening on port 58367
+JavaScript error: resource://activity-stream/lib/ASRouter.jsm, line 988: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIObserverService.removeObserver]
+[Parent 10536, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+[Parent 10536, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616003560470	geckodriver	INFO	Listening on 127.0.0.1:51317
+1616003563506	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\riaz\\AppData\\Local\\Temp\\rust_mozprofileEOrrbr"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616003568548	Marionette	INFO	Listening on port 51325
+1616003569056	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/ContactWnd.aspx?CompanyId=117, line 1: unreachable code after return statement
+1616003627775	Marionette	INFO	Stopped listening on port 51325
+JavaScript error: resource://activity-stream/lib/ASRouter.jsm, line 988: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIObserverService.removeObserver]
+[Parent 2056, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616003629904	geckodriver	INFO	Listening on 127.0.0.1:51383
+1616003633032	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\riaz\\AppData\\Local\\Temp\\rust_mozprofilembSIDf"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616003638787	Marionette	INFO	Listening on port 51391
+1616003638889	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 840: SyntaxError: expected expression, got '}'
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1118: SyntaxError: expected expression, got '}'
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1396: SyntaxError: expected expression, got '}'
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1674: SyntaxError: expected expression, got '}'
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1616003688860	Marionette	INFO	Stopped listening on port 51391
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616004094166	geckodriver	INFO	Listening on 127.0.0.1:51681
+1616004097271	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\riaz\\AppData\\Local\\Temp\\rust_mozprofileW7tw0o"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616004108100	Marionette	INFO	Listening on port 51690
+1616004108675	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 840: SyntaxError: expected expression, got '}'
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1118: SyntaxError: expected expression, got '}'
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1396: SyntaxError: expected expression, got '}'
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1674: SyntaxError: expected expression, got '}'
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1616004161955	Marionette	INFO	Stopped listening on port 51690
+[Parent 9660, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616004399015	geckodriver	INFO	Listening on 127.0.0.1:56574
+1616004402005	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\riaz\\AppData\\Local\\Temp\\rust_mozprofileqzusuw"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+[Parent 9428, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1616004414211	Marionette	INFO	Listening on port 56583
+1616004414825	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616004430940	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 840: SyntaxError: expected expression, got '}'
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1118: SyntaxError: expected expression, got '}'
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1396: SyntaxError: expected expression, got '}'
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1674: SyntaxError: expected expression, got '}'
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1616004475339	Marionette	INFO	Stopped listening on port 56583
+JavaScript error: resource://activity-stream/lib/ASRouter.jsm, line 988: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIObserverService.removeObserver]
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616329530292	geckodriver	INFO	Listening on 127.0.0.1:57211
+1616329543019	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\riaz\\AppData\\Local\\Temp\\rust_mozprofilep5e4QF"
+[GFX1-]: Killing GPU process due to IPC reply timeout
+[GFX1-]: Failed to create remote compositor
+[Parent 12280, Main Thread] WARNING: base::KillProcess refusing to terminate process handle 0: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:402
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+[Parent 12280, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1616329631437	Marionette	INFO	Listening on port 58221
+1616329804382	Marionette	INFO	Stopped listening on port 58221
+a\\Local\\Temp\\rust_mozprofileaORsmH"
+[GFX1-]: Killing GPU process due to IPC reply timeout
+[GFX1-]: Failed to create remote compositor
+[Parent 10288, Main Thread] WARNING: base::KillProcess refusing to terminate process handle 0: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:402
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.error: "Could not write session state file " (new Error("_initWorker called too early! Please read the session file from disk first.", "resource:///modules/sessionstore/SessionFile.jsm", 375)) "_initWorker/<@resource:///modules/sessionstore/SessionFile.jsm:375:15\n_initWorker@resource:///modules/sessionstore/SessionFile.jsm:368:12\n_postToWorker@resource:///modules/sessionstore/SessionFile.jsm:410:16\nwrite@resource:///modules/sessionstore/SessionFile.jsm:448:24\nwrite@resource:///modules/sessionstore/SessionFile.jsm:75:32\n_writeState@resource:///modules/sessionstore/SessionSaver.jsm:360:24\n_saveState@resource:///modules/sessionstore/SessionSaver.jsm:294:17\n_saveStateAsync@resource:///modules/sessionstore/SessionSaver.jsm:344:10\nsaveStateAsyncWhenIdle@resource:///modules/sessionstore/SessionSaver.jsm:191:14\ncallback@resource://gre/modules/Timer.jsm:127:16\n"
+1616329646044	Marionette	INFO	Listening on port 58294
+1616329647696	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616329671428	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/ContactWnd.aspx?CompanyId=118, line 1: unreachable code after return statement
+1616329726946	Marionette	INFO	Stopped listening on port 58294
+[Parent 10288, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1616329731479	geckodriver	INFO	Listening on 127.0.0.1:51000
+1616329735477	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\riaz\\AppData\\Local\\Temp\\rust_mozprofilenSsTcn"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616329753800	Marionette	INFO	Listening on port 51008
+1616329754147	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 840: SyntaxError: expected expression, got '}'
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1118: SyntaxError: expected expression, got '}'
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1396: SyntaxError: expected expression, got '}'
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1674: SyntaxError: expected expression, got '}'
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1616329792233	Marionette	INFO	Stopped listening on port 51008
+[Parent 11148, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616345960364	geckodriver	INFO	Listening on 127.0.0.1:59861
+1616345963456	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\riaz\\AppData\\Local\\Temp\\rust_mozprofilefrOCcr"
+[Parent 1164, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616346002002	Marionette	INFO	Listening on port 59869
+1616346002745	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 840: SyntaxError: expected expression, got '}'
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1118: SyntaxError: expected expression, got '}'
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1396: SyntaxError: expected expression, got '}'
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1674: SyntaxError: expected expression, got '}'
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1616346073496	Marionette	INFO	Stopped listening on port 59869
+JavaScript error: https://qareceivables.dsidrm.com/js/tinymce/themes/silver/theme.min.js, line 9: TypeError: window.getComputedStyle(...) is null
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616346233213	geckodriver	INFO	Listening on 127.0.0.1:51483
+1616346236559	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\riaz\\AppData\\Local\\Temp\\rust_mozprofile6jfLPt"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616346251385	Marionette	INFO	Listening on port 51491
+1616346251750	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616346260059	Marionette	INFO	Stopped listening on port 51491
+JavaScript error: resource://activity-stream/lib/ASRouter.jsm, line 988: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIObserverService.removeObserver]
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+[Parent 8424, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616346270102	geckodriver	INFO	Listening on 127.0.0.1:51557
+1616346273158	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\riaz\\AppData\\Local\\Temp\\rust_mozprofilef45tLM"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616346279920	Marionette	INFO	Listening on port 51565
+1616346280165	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616346291932	Marionette	INFO	Stopped listening on port 51565
+JavaScript error: resource://activity-stream/lib/ASRouter.jsm, line 988: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIObserverService.removeObserver]
+[Parent 6980, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616346429517	geckodriver	INFO	Listening on 127.0.0.1:51636
+1616346432632	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\riaz\\AppData\\Local\\Temp\\rust_mozprofilevM23Qb"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616346438828	Marionette	INFO	Listening on port 51647
+1616346439012	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616346446972	Marionette	INFO	Stopped listening on port 51647
+JavaScript error: resource://activity-stream/lib/ASRouter.jsm, line 988: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIObserverService.removeObserver]
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616346499268	geckodriver	INFO	Listening on 127.0.0.1:51694
+1616346502417	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\riaz\\AppData\\Local\\Temp\\rust_mozprofiledHHnCj"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616346507654	Marionette	INFO	Listening on port 51702
+1616346507793	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616346522117	Marionette	INFO	Stopped listening on port 51702
+[Parent 3080, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616346607163	geckodriver	INFO	Listening on 127.0.0.1:52015
+1616346610230	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\riaz\\AppData\\Local\\Temp\\rust_mozprofilegFLUYp"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616346615746	Marionette	INFO	Listening on port 52024
+1616346616123	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 840: SyntaxError: expected expression, got '}'
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1118: SyntaxError: expected expression, got '}'
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1396: SyntaxError: expected expression, got '}'
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1674: SyntaxError: expected expression, got '}'
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1616346683741	Marionette	INFO	Stopped listening on port 52024
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616346718834	geckodriver	INFO	Listening on 127.0.0.1:49693
+1616346721934	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\riaz\\AppData\\Local\\Temp\\rust_mozprofileeOACBJ"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616346727714	Marionette	INFO	Listening on port 49701
+1616346727875	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 840: SyntaxError: expected expression, got '}'
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1118: SyntaxError: expected expression, got '}'
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1396: SyntaxError: expected expression, got '}'
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1674: SyntaxError: expected expression, got '}'
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1616346799313	Marionette	INFO	Stopped listening on port 49701
+JavaScript error: https://qareceivables.dsidrm.com/js/tinymce/themes/silver/theme.min.js, line 9: TypeError: window.getComputedStyle(...) is null
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616347031312	geckodriver	INFO	Listening on 127.0.0.1:52090
+1616347034445	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\riaz\\AppData\\Local\\Temp\\rust_mozprofileTFbjje"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616347045099	Marionette	INFO	Listening on port 52098
+1616347045700	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 840: SyntaxError: expected expression, got '}'
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1118: SyntaxError: expected expression, got '}'
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1396: SyntaxError: expected expression, got '}'
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1674: SyntaxError: expected expression, got '}'
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1616347112990	Marionette	INFO	Stopped listening on port 52098
+[Parent 9996, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616347159315	geckodriver	INFO	Listening on 127.0.0.1:52180
+1616347162570	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\riaz\\AppData\\Local\\Temp\\rust_mozprofilet2GrUd"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616347170285	Marionette	INFO	Listening on port 52188
+1616347170606	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 840: SyntaxError: expected expression, got '}'
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1118: SyntaxError: expected expression, got '}'
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1396: SyntaxError: expected expression, got '}'
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1674: SyntaxError: expected expression, got '}'
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1: unreachable code after return statement
+1616347233113	Marionette	INFO	Stopped listening on port 52188
+[Parent 2136, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616348779363	geckodriver	INFO	Listening on 127.0.0.1:49395
+1616348782675	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\riaz\\AppData\\Local\\Temp\\rust_mozprofileb0ZaTa"
+[Parent 2384, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616348809255	Marionette	INFO	Listening on port 49403
+1616348809782	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/CompanyWnd.aspx?CompanyId=0, line 1: unreachable code after return statement
+1616348880394	Marionette	INFO	Stopped listening on port 49403
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616348882376	geckodriver	INFO	Listening on 127.0.0.1:62003
+1616348885513	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\riaz\\AppData\\Local\\Temp\\rust_mozprofileBzKj1J"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616348892485	Marionette	INFO	Listening on port 62013
+1616348893000	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/ContactWnd.aspx?CompanyId=118, line 1: unreachable code after return statement
+1616348946705	Marionette	INFO	Stopped listening on port 62013
+JavaScript error: resource://activity-stream/lib/ASRouter.jsm, line 988: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIObserverService.removeObserver]
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616348948236	geckodriver	INFO	Listening on 127.0.0.1:49330
+1616348951797	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\riaz\\AppData\\Local\\Temp\\rust_mozprofilewz7oVK"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1616348956415	Marionette	INFO	Listening on port 49338
+1616348956581	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 840: SyntaxError: expected expression, got '}'
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1118: SyntaxError: expected expression, got '}'
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1396: SyntaxError: expected expression, got '}'
+JavaScript error: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1674: SyntaxError: expected expression, got '}'
+JavaScript warning: https://qareceivables.dsidrm.com/js/jquery.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://qareceivables.dsidrm.com/IPWnd.aspx?IpId=0, line 1: unreachable code after return statement
+1616349018296	Marionette	INFO	Stopped listening on port 49338
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 6244, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+[Parent 6244, IPC I/O Parent] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:545
+[Parent 6244, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
