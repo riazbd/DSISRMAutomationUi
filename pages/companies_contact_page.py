@@ -8,6 +8,7 @@ from selenium.webdriver.support.select import Select
 from pages.base_page import BasePage
 from utils import ExcelUtils
 from utils.locators import CompaniesAndContactPageLocators
+from pages.welcome_page import WelcomePage
 
 
 class CompaniesAndContactPage(BasePage):
@@ -68,17 +69,29 @@ class CompaniesAndContactPage(BasePage):
 
 
     def fill_up_company_info(self):
-        path = pathlib.Path(__file__).parent / "../utils/TestData_riaz.xlsx"
-        client = ExcelUtils.readData(path, 'config', 2, 2)
-        row = ExcelUtils.getRowCount(path, 'testData')
+        path = pathlib.Path(__file__).parent / "../utils/Client 1 - Activision.xlsx"
+        row = ExcelUtils.getRowCount(path, 'AddCompany')
 
         for r in range(2, row + 1):
-            companyName = ExcelUtils.readData(path, client, r, 3)
-            businessCategory = ExcelUtils.readData(path, client, r, 4)
-            address = ExcelUtils.readData(path, client, r, 5)
-            city = ExcelUtils.readData(path, client, r, 6)
-            country = ExcelUtils.readData(path, client, r, 7)
+            companyName = ExcelUtils.readData(path, 'AddCompany', r, 1)
+            businessCategory = ExcelUtils.readData(path, 'AddCompany', r, 2)
+            address = ExcelUtils.readData(path, 'AddCompany', r, 3)
+            city = ExcelUtils.readData(path, 'AddCompany', r, 4)
+            country = ExcelUtils.readData(path, 'AddCompany', r, 5)
+            page1 = WelcomePage(self.driver)
+            page2 = CompaniesAndContactPage(self.driver)
             ts = str(time.time())
+
+            time.sleep(2)
+            self.driver.switch_to_default_content()
+
+            time.sleep(2)
+            page2.click_add_new_company()
+
+            time.sleep(2)
+
+            self.driver.switch_to.frame(1)
+
             time.sleep(1)
             self.enter_company_name(companyName + " "+ts)
 
@@ -105,6 +118,6 @@ class CompaniesAndContactPage(BasePage):
 
             time.sleep(1)
             self.Click_Save_Button()
-
-
-            return CompaniesAndContactPage(self.driver)
+            #
+            #
+            # return CompaniesAndContactPage(self.driver)

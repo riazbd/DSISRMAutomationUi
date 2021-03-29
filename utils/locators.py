@@ -37,7 +37,8 @@ class CompaniesAndContactPageLocators(object):
     companyStatus = (By.ID, "ddlCompanyStatus")
     BusinessCategory = (By.ID, "msBusinesCategory_hrefOnItemsList")
     SearchBusinessCategory = (By.ID, "msBusinesCategory_txtSearch")
-    BusinessCategoryCheckBox = (By.ID, "checkbox_msBusinesCategory_gridItems_Incl_1")
+    # BusinessCategoryCheckBox = (By.ID, "checkbox_msBusinesCategory_gridItems_Incl_1")
+    BusinessCategoryCheckBox = (By.XPATH, '//*[@id="msBusinesCategory_gridItems_top_head"]/td[1]/div/input')
     BusinessCategoryDone = (By.ID, "msBusinesCategory_btnDone")
 
     addLink = (By.ID, "msBusinesCategory_hrefOnItemsList")
@@ -59,12 +60,17 @@ class CompaniesAndContactPageLocators(object):
     StateSelect = (By.ID, "ddlState")
     zipCode = (By.ID, "txtPostCode")
 
+
     # Save / Cancel
     saveButton = (By.ID, "btnSave")
     cancelButton = (By.ID, "btnCancel")
+    uploadButton = (By.ID, "btnUpload")
 
 class IPandProductsPageLocators(object):
+    productsMenuLocator = (By.ID, "wsSecondaryMenuItem_302")
+
     addNewIP = (By.ID, "ctl00_ActionsContent_idAddNewLink")
+    addNewProduct = (By.ID, "ctl00_ContentPlaceHolder1_idAddNewLink")
 
     #Intellectual Proerty Details
     Addlicensor = (By.ID, "msLicensor_hrefOnItemsList")
@@ -122,9 +128,38 @@ class ContactsLocator(object):
     checkRole = (By.XPATH, "/html/body/form/div[4]/div/div[1]/table/tbody/tr/td[1]/table[4]/tbody/tr[2]/td[1]/div[2]/div[2]/table/tbody/tr/td/table/tbody/tr[1]/td[1]/div/input")
     checkRoleDone = (By.ID, "msRoles_btnDone")
 
+    #image upload
+    addPhoto = (By.ID, "aAddPhoto")
+    fileUpload = (By.ID, "FileUpload1")
+    buttonUplaod = (By.ID, "btnUpload")
+
+
     #save/cancel
     saveBtn3 = (By.ID, "btnSave")
     cancelBtn3 = (By.ID, "btnCancel")
+
+class AddProductsLocatord(object):
+    productCategoryLocator = (By.XPATH, '//*[@id="ctl00_caLeftMenu_1"]/nobr')
+    productSubCategoryLocator = (By.XPATH, '//*[@id="ctl00_caLeftMenu_2"]/nobr')
+    productArticlesLocator = (By.XPATH, '//*[@id="ctl00_caLeftMenu_3"]/nobr')
+
+    frameLocator = (By.ID, "ctl00_ContentPlaceHolder1_WndHostctrl1_ifrm")
+    productNameLocator = (By.ID, "txtProductName")
+    primaryNumber = (By.ID, "txtPrimaryNumber")
+    addNewLocator = (By.ID, "ctl00_MainContent_DefaultsCtrl1_idAddNewLink")
+    categoryName = (By.ID, "")
+    categoryDescription = (By.ID, "txtDescr")
+    linkedToProductLocator = (By.ID, "")
+    subCategoryNameLocator = (By.ID, "")
+    subCategoryDescriptionLocator = (By.ID, "")
+    linkedtoCategoryLocator = (By.ID, "")
+    articleNameLocator = (By.ID, "")
+    articleDesciptionLocator = (By.ID, "")
+    linkedTosubCategoryLocator = (By.ID, "")
+
+    buttonSaveLocatorforProducts = (By.ID, "btnSave")
+
+
 
 
 

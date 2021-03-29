@@ -8,6 +8,9 @@ from selenium.webdriver.support.select import Select
 from pages.base_page import BasePage
 from utils import ExcelUtils
 from utils.locators import ContactsLocator
+from pages.welcome_page import WelcomePage
+from pages.login_page import LoginPage
+from utils.test_cases import test_cases
 
 
 class AddContactsPage(BasePage):
@@ -46,21 +49,51 @@ class AddContactsPage(BasePage):
         self.find_element(*self.locator.checkRoleDone).click()
 
     def Click_Save_Button(self):
-        self.find_element(*self.locator.saveBtn3).click() 
+        self.find_element(*self.locator.saveBtn3).click()
+
+    def uploadImage(self):
+        # avatarPath = pathlib.Path(__file__).parent / "../photos/avatar.jpg"
+        self.find_element(*self.locator.addPhoto).click()
+        # self.find_element(*self.locator.fileUpload).clear()
+        time.sleep(3)
+        self.find_element(*self.locator.fileUpload).send_keys(os.getcwd()+"/photos/avatar.jpg")
+        self.find_element(*self.locator.buttonUplaod).click()
+
 
     
     def fill_up_add_contacts(self):
-        path = pathlib.Path(__file__).parent / "../utils/TestData_riaz.xlsx"
-        client = ExcelUtils.readData(path, 'config', 2, 2)
-        row = ExcelUtils.getRowCount(path, client)
+        path = pathlib.Path(__file__).parent / "../utils/Client 1 - Activision.xlsx"
+        row = ExcelUtils.getRowCount(path, 'AddContacts')
 
         for r in range(2, row + 1):
-            situation = ExcelUtils.readData(path, client, r, 14)
-            firstName = ExcelUtils.readData(path, client, r, 15)
-            lastName = ExcelUtils.readData(path, client, r, 16)
-            email = ExcelUtils.readData(path, client, r, 17)
-            role = ExcelUtils.readData(path, client, r, 18)
+            situation = ExcelUtils.readData(path, 'AddContacts', r, 1)
+            firstName = ExcelUtils.readData(path, 'AddContacts', r, 2)
+            lastName = ExcelUtils.readData(path, 'AddContacts', r, 3)
+            email = ExcelUtils.readData(path, 'AddContacts', r, 4)
+            role = ExcelUtils.readData(path, 'AddContacts', r, 5)
             ts = str(time.time())
+
+            # page = LoginPage(self.driver)
+            # page1 = WelcomePage(self.driver)
+            # # page2 = AddContactsPage(self.driver)
+            # # page3 = BasePage(self.driver)
+            #
+            # time.sleep(3)
+            # page.login()
+            #
+            # time.sleep(2)
+            # #  this line should be corrected
+            # page1.click_companies_contacts_tab()
+            self.driver.switch_to_default_content()
+            time.sleep(2)
+            self.driver.switch_to.frame("ctl00_MainContent_ifrmCompanyContact")
+
+            time.sleep(2)
+            self.click_add_new_contacts()
+
+            time.sleep(5)
+            self.driver.switch_to_default_content()
+            self.driver.switch_to.frame("ctl00_MainContent_WndHostctrl1_ifrm")
 
             time.sleep(1)
             self.select_situation(situation)
@@ -87,6 +120,11 @@ class AddContactsPage(BasePage):
             self.check_role_done()
 
             time.sleep(1)
+            self.uploadImage()
+
+            time.sleep(1)
             self.Click_Save_Button()
 
-            return AddContactsPage(self.driver)
+            time.sleep(3)
+            #
+            # return AddContactsPage(self.driver)

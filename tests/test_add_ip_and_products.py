@@ -28,19 +28,15 @@ class TestAddIp(BaseTest):
         time.sleep(2)
 
         time.sleep(2)
-        check_menu = page1.click_ip_and_Products_tab()
-
-        time.sleep(2)
-        page2 = IPandProductsPage(self.driver)
+        page1.click_ip_and_Products_tab()
 
         time.sleep(2)
 
-        time.sleep(2)
-        page2.click_add_new_ip()
-
-        time.sleep(5)
-
-        self.driver.switch_to.frame(0)
+        # time.sleep(2)
+        # page2.click_add_new_ip()
+        #
+        # time.sleep(5)
+        # self.driver.switch_to.frame(0)
 
         time.sleep(2)
         page2.fill_up_add_ip()

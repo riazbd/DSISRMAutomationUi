@@ -1,8 +1,13 @@
-import pathlib  #Added This line to skip error
+import pathlib #Added This line to skip error
+import sys, os
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
+
 import time
 import unittest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+
+from utils import ExcelUtils
 
 
 # I am using python unittest for asserting cases.
@@ -21,9 +26,11 @@ class BaseTest(unittest.TestCase):
         # options.add_argument('--disable-gpu')
 
         # self.driver = webdriver.Chrome(options=options)
-        self.driver = webdriver.Firefox(executable_path=pathlib.Path(__file__).parent / "../browser/geckodriver.exe")
+        self.driver = webdriver.Firefox(executable_path=pathlib.Path(__file__).parent / "../browser/geckodriver")
         self.driver.set_page_load_timeout(300)
-        self.driver.get("https://qareceivables.dsidrm.com/signin")
+        self.path = pathlib.Path(__file__).parent / "../utils/Client 1 - Activision.xlsx"
+        # self.driver.get("https://qareceivables.dsidrm.com/signin")
+        self.driver.get(ExcelUtils.readData(self.path, 'LoginData', 2, 3))
 
     def tearDown(self):
         self.driver.close()

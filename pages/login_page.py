@@ -27,13 +27,12 @@ class LoginPage(BasePage):
         self.find_element(*self.locator.login_button).click()
 
     def login(self):
-        path = pathlib.Path(__file__).parent / "../utils/TestData_riaz.xlsx"
-        client = ExcelUtils.readData(path, 'config', 2, 2)
-        row = ExcelUtils.getRowCount(path, client)
+        path = pathlib.Path(__file__).parent / "../utils/Client 1 - Activision.xlsx"
+        row = ExcelUtils.getRowCount(path, 'LoginData')
 
         for r in range(2, row + 1):
-            username = ExcelUtils.readData(path, client, r, 1)
-            password = ExcelUtils.readData(path, client, r, 2)
+            username = ExcelUtils.readData(path, 'LoginData', r, 1)
+            password = ExcelUtils.readData(path, 'LoginData', r, 2)
             time.sleep(1)
             self.enter_email(username)
             time.sleep(1)

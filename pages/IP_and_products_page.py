@@ -67,18 +67,28 @@ class IPandProductsPage(BasePage):
 
 
     def fill_up_add_ip(self):
-        path = pathlib.Path(__file__).parent / "../utils/TestData_riaz.xlsx"
-        client = ExcelUtils.readData(path, 'config', 2, 2)
-        row = ExcelUtils.getRowCount(path, client)
+        path = pathlib.Path(__file__).parent / "../utils/Client 1 - Activision.xlsx"
+        row = ExcelUtils.getRowCount(path, 'AddIP')
 
         for r in range(2, row + 1):
-            licensor = ExcelUtils.readData(path, client, r, 8)
-            intel = ExcelUtils.readData(path, client, r, 9)
-            primaryId = ExcelUtils.readData(path, client, r, 10)
-            owner = ExcelUtils.readData(path, client, r, 11)
-            lang = ExcelUtils.readData(path, client, r, 12)
-            ipType = ExcelUtils.readData(path, client, r, 13)
+            licensor = ExcelUtils.readData(path, 'AddIP', r, 1)
+            intel = ExcelUtils.readData(path, 'AddIP', r, 2)
+            primaryId = ExcelUtils.readData(path, 'AddIP', r, 3)
+            owner = ExcelUtils.readData(path, 'AddIP', r, 4)
+            lang = ExcelUtils.readData(path, 'AddIP', r, 5)
+            ipType = ExcelUtils.readData(path, 'AddIP', r, 6)
+            page2 = IPandProductsPage(self.driver)
             ts = str(time.time())
+
+            time.sleep(2)
+            self.driver.switch_to_default_content()
+
+            time.sleep(2)
+            page2.click_add_new_ip()
+
+            time.sleep(5)
+            self.driver.switch_to.frame(0)
+
             time.sleep(1)
             self.add_licensor()
 
@@ -112,11 +122,11 @@ class IPandProductsPage(BasePage):
             time.sleep(1)
             self.done_check_ip_type()
 
-            # time.sleep(1)
-            # self.select_language(lang)
+            time.sleep(1)
+            self.select_language(lang)
 
             time.sleep(1)
             self.Click_Save_Button()
-
-
-            return IPandProductsPage(self.driver)
+            #
+            #
+            # return IPandProductsPage(self.driver)

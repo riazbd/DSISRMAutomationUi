@@ -1,13 +1,20 @@
-from telnetlib import EC
+import pathlib
+import sys, os
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 
+from telnetlib import EC
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
 
+from utils import ExcelUtils
+
 
 # this Base class is serving basic attributes for every single page inherited from Page class
 class BasePage(object):
-    def __init__(self, driver, base_url='https://qareceivables.dsidrm.com/signin'):
+    path = pathlib.Path(__file__).parent / "../utils/Client 1 - Activision.xlsx"
+
+    def __init__(self, driver, base_url=ExcelUtils.readData(path, 'LoginData', 2, 3)):
         self.base_url = base_url
         self.driver = driver
         self.timeout = 30
