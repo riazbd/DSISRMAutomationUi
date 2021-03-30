@@ -11,6 +11,7 @@ from utils.locators import ContactsLocator
 from pages.welcome_page import WelcomePage
 from pages.login_page import LoginPage
 from utils.test_cases import test_cases
+from utils.testData import TestData
 
 
 class AddContactsPage(BasePage):
@@ -59,72 +60,93 @@ class AddContactsPage(BasePage):
         self.find_element(*self.locator.fileUpload).send_keys(os.getcwd()+"/photos/avatar.jpg")
         self.find_element(*self.locator.buttonUplaod).click()
 
+    def click_systemUser(self):
+        self.find_element(*self.locator.systemUser).click()
+
+    def click_inernalUser(self):
+        self.find_element(*self.locator.internalUser).click()
+
+    def click_externalUser(self):
+        self.find_element(*self.locator.externalUser).click()
 
     
     def fill_up_add_contacts(self):
-        path = pathlib.Path(__file__).parent / "../utils/Client 1 - Activision.xlsx"
-        row = ExcelUtils.getRowCount(path, 'AddContacts')
-
+        path = pathlib.Path(__file__).parent / "../utils/testConfig.xlsx"
+        client = ExcelUtils.readData(path, 'testConfig', TestData.clientID + 1, 1)
+        clientPath = pathlib.Path(__file__).parent / "../utils" / client
+        row = ExcelUtils.getRowCount(clientPath, 'AddContacts')
         for r in range(2, row + 1):
-            situation = ExcelUtils.readData(path, 'AddContacts', r, 1)
-            firstName = ExcelUtils.readData(path, 'AddContacts', r, 2)
-            lastName = ExcelUtils.readData(path, 'AddContacts', r, 3)
-            email = ExcelUtils.readData(path, 'AddContacts', r, 4)
-            role = ExcelUtils.readData(path, 'AddContacts', r, 5)
-            ts = str(time.time())
+                situation = ExcelUtils.readData(clientPath, 'AddContacts', r, 1)
+                firstName = ExcelUtils.readData(clientPath, 'AddContacts', r, 2)
+                lastName = ExcelUtils.readData(clientPath, 'AddContacts', r, 3)
+                email = ExcelUtils.readData(clientPath, 'AddContacts', r, 4)
+                role = ExcelUtils.readData(clientPath, 'AddContacts', r, 5)
+                SysUser = ExcelUtils.readData(clientPath, 'AddContacts', r, 6)
+                ts = str(time.time())
 
-            # page = LoginPage(self.driver)
-            # page1 = WelcomePage(self.driver)
-            # # page2 = AddContactsPage(self.driver)
-            # # page3 = BasePage(self.driver)
-            #
-            # time.sleep(3)
-            # page.login()
-            #
-            # time.sleep(2)
-            # #  this line should be corrected
-            # page1.click_companies_contacts_tab()
-            self.driver.switch_to_default_content()
-            time.sleep(2)
-            self.driver.switch_to.frame("ctl00_MainContent_ifrmCompanyContact")
+                # page = LoginPage(self.driver)
+                # page1 = WelcomePage(self.driver)
+                # # page2 = AddContactsPage(self.driver)
+                # # page3 = BasePage(self.driver)
+                #
+                # time.sleep(3)
+                # page.login()
+                #
+                # time.sleep(2)
+                # #  this line should be corrected
+                # page1.click_companies_contacts_tab()
+                self.driver.switch_to_default_content()
+                time.sleep(2)
+                self.driver.switch_to.frame("ctl00_MainContent_ifrmCompanyContact")
 
-            time.sleep(2)
-            self.click_add_new_contacts()
+                time.sleep(2)
+                self.click_add_new_contacts()
 
-            time.sleep(5)
-            self.driver.switch_to_default_content()
-            self.driver.switch_to.frame("ctl00_MainContent_WndHostctrl1_ifrm")
+                time.sleep(5)
+                self.driver.switch_to_default_content()
+                self.driver.switch_to.frame("ctl00_MainContent_WndHostctrl1_ifrm")
 
-            time.sleep(1)
-            self.select_situation(situation)
+                time.sleep(1)
+                self.select_situation(situation)
 
-            time.sleep(1)
-            self.add_firstName(firstName)
+                time.sleep(1)
+                self.add_firstName(firstName)
 
-            time.sleep(1)
-            self.add_lastname(lastName + " " + ts)
+                time.sleep(1)
+                self.add_lastname(lastName + " " + ts)
 
-            time.sleep(1)
-            self.add_email(email)
+                time.sleep(1)
+                self.add_email(email)
 
-            time.sleep(1)
-            self.add_role()
+                time.sleep(1)
+                self.add_role()
 
-            time.sleep(1)
-            self.search_role(role)
+                time.sleep(1)
+                self.search_role(role)
 
-            time.sleep(1)
-            self.check_role()
+                time.sleep(1)
+                self.check_role()
 
-            time.sleep(1)
-            self.check_role_done()
+                time.sleep(1)
+                self.check_role_done()
 
-            time.sleep(1)
-            self.uploadImage()
+                time.sleep(1)
+                self.uploadImage()
 
-            time.sleep(1)
-            self.Click_Save_Button()
+                time.sleep(1)
+                self.click_systemUser()
 
-            time.sleep(3)
-            #
-            # return AddContactsPage(self.driver)
+                if SysUser == "Internal":
+                    time.sleep(1)
+                    self.click_inernalUser()
+                elif SysUser == "External":
+                    time.sleep(1)
+                    self.click_externalUser()
+
+
+                time.sleep(1)
+                self.Click_Save_Button()
+
+                time.sleep(3)
+                #
+                # return AddContactsPage(self.driver)

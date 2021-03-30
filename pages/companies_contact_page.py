@@ -9,6 +9,7 @@ from pages.base_page import BasePage
 from utils import ExcelUtils
 from utils.locators import CompaniesAndContactPageLocators
 from pages.welcome_page import WelcomePage
+from utils.testData import TestData
 
 
 class CompaniesAndContactPage(BasePage):
@@ -69,55 +70,56 @@ class CompaniesAndContactPage(BasePage):
 
 
     def fill_up_company_info(self):
-        path = pathlib.Path(__file__).parent / "../utils/Client 1 - Activision.xlsx"
-        row = ExcelUtils.getRowCount(path, 'AddCompany')
-
+        path = pathlib.Path(__file__).parent / "../utils/testConfig.xlsx"
+        client = ExcelUtils.readData(path, 'testConfig', TestData.clientID + 1, 1)
+        clientPath = pathlib.Path(__file__).parent / "../utils" / client
+        row = ExcelUtils.getRowCount(clientPath, 'AddCompany')
         for r in range(2, row + 1):
-            companyName = ExcelUtils.readData(path, 'AddCompany', r, 1)
-            businessCategory = ExcelUtils.readData(path, 'AddCompany', r, 2)
-            address = ExcelUtils.readData(path, 'AddCompany', r, 3)
-            city = ExcelUtils.readData(path, 'AddCompany', r, 4)
-            country = ExcelUtils.readData(path, 'AddCompany', r, 5)
-            page1 = WelcomePage(self.driver)
-            page2 = CompaniesAndContactPage(self.driver)
-            ts = str(time.time())
+                companyName = ExcelUtils.readData(clientPath, 'AddCompany', r, 1)
+                businessCategory = ExcelUtils.readData(clientPath, 'AddCompany', r, 2)
+                address = ExcelUtils.readData(clientPath, 'AddCompany', r, 3)
+                city = ExcelUtils.readData(clientPath, 'AddCompany', r, 4)
+                country = ExcelUtils.readData(clientPath, 'AddCompany', r, 5)
+                page1 = WelcomePage(self.driver)
+                page2 = CompaniesAndContactPage(self.driver)
+                ts = str(time.time())
 
-            time.sleep(2)
-            self.driver.switch_to_default_content()
+                time.sleep(2)
+                self.driver.switch_to_default_content()
 
-            time.sleep(2)
-            page2.click_add_new_company()
+                time.sleep(2)
+                page2.click_add_new_company()
 
-            time.sleep(2)
+                time.sleep(2)
 
-            self.driver.switch_to.frame(1)
+                self.driver.switch_to.frame(1)
 
-            time.sleep(1)
-            self.enter_company_name(companyName + " "+ts)
+                time.sleep(1)
+                self.enter_company_name(companyName + " "+ts)
 
-            time.sleep(1)
-            self.add_business_category()
+                time.sleep(1)
+                self.add_business_category()
 
-            time.sleep(1)
-            self.search_business_category(businessCategory)
+                time.sleep(1)
+                self.search_business_category(businessCategory)
 
-            time.sleep(1)
-            self.check_business_category()
+                time.sleep(1)
+                self.check_business_category()
 
-            time.sleep(1)
-            self.done_check_business_category()
+                time.sleep(1)
+                self.done_check_business_category()
 
-            time.sleep(1)
-            self.enter_address(address)
+                time.sleep(1)
+                self.enter_address(address)
 
-            time.sleep(1)
-            self.enter_city(city)
+                time.sleep(1)
+                self.enter_city(city)
 
-            time.sleep(1)
-            self.select_country(country)
+                time.sleep(1)
+                self.select_country(country)
 
-            time.sleep(1)
-            self.Click_Save_Button()
-            #
-            #
-            # return CompaniesAndContactPage(self.driver)
+                time.sleep(1)
+                self.Click_Save_Button()
+                #
+                #
+                # return CompaniesAndContactPage(self.driver)

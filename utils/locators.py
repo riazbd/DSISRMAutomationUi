@@ -67,7 +67,7 @@ class CompaniesAndContactPageLocators(object):
     uploadButton = (By.ID, "btnUpload")
 
 class IPandProductsPageLocators(object):
-    productsMenuLocator = (By.ID, "wsSecondaryMenuItem_302")
+
 
     addNewIP = (By.ID, "ctl00_ActionsContent_idAddNewLink")
     addNewProduct = (By.ID, "ctl00_ContentPlaceHolder1_idAddNewLink")
@@ -133,12 +133,17 @@ class ContactsLocator(object):
     fileUpload = (By.ID, "FileUpload1")
     buttonUplaod = (By.ID, "btnUpload")
 
+    systemUser = (By.ID, "cbSysUser")
+    externalUser = (By.ID, "rbExtUser")
+    internalUser = (By.ID, "rbIntUser")
+
 
     #save/cancel
     saveBtn3 = (By.ID, "btnSave")
     cancelBtn3 = (By.ID, "btnCancel")
 
-class AddProductsLocatord(object):
+class AddProductsLocator(object):
+    productsMenuLocator = (By.ID, "wsSecondaryMenuItem_302")
     productCategoryLocator = (By.XPATH, '//*[@id="ctl00_caLeftMenu_1"]/nobr')
     productSubCategoryLocator = (By.XPATH, '//*[@id="ctl00_caLeftMenu_2"]/nobr')
     productArticlesLocator = (By.XPATH, '//*[@id="ctl00_caLeftMenu_3"]/nobr')
@@ -146,19 +151,22 @@ class AddProductsLocatord(object):
     frameLocator = (By.ID, "ctl00_ContentPlaceHolder1_WndHostctrl1_ifrm")
     productNameLocator = (By.ID, "txtProductName")
     primaryNumber = (By.ID, "txtPrimaryNumber")
-    addNewLocator = (By.ID, "ctl00_MainContent_DefaultsCtrl1_idAddNewLink")
-    categoryName = (By.ID, "")
+    addNewLocator = (By.ID, "ctl00_ContentPlaceHolder1_idAddNewLink")
+    categoryName = (By.ID, "txtName")
     categoryDescription = (By.ID, "txtDescr")
-    linkedToProductLocator = (By.ID, "")
-    subCategoryNameLocator = (By.ID, "")
-    subCategoryDescriptionLocator = (By.ID, "")
-    linkedtoCategoryLocator = (By.ID, "")
-    articleNameLocator = (By.ID, "")
-    articleDesciptionLocator = (By.ID, "")
-    linkedTosubCategoryLocator = (By.ID, "")
+    showAll = (By.ID, "cbShowAll")
+    linkedToProductLocator = (By.ID, "checkbox_gridIncl_Incl_0")
+    aDDnewLocator = (By.ID, "ctl00_MainContent_DefaultsCtrl1_idAddNewLink")
+
+    subCategoryNameLocator = (By.ID, "txtName")
+    subCategoryDescriptionLocator = (By.ID, "txtDescr")
+    linkedtoCategoryLocator = (By.ID, "checkbox_gridIncl_Incl_0")
+    articleNameLocator = (By.ID, "txtName")
+    articleDesciptionLocator = (By.ID, "txtDescr")
+    linkedTosubCategoryLocator = (By.ID, "checkbox_gridIncl_Incl_0")
 
     buttonSaveLocatorforProducts = (By.ID, "btnSave")
-
+    buttonCancelLocatorProducts = (By.ID, "btnCancel")
 
 
 

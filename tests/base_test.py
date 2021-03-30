@@ -6,6 +6,7 @@ import time
 import unittest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from utils.testData import TestData
 
 from utils import ExcelUtils
 
@@ -15,31 +16,25 @@ from utils import ExcelUtils
 # If you want to run it, you should type: python <module-name.py>
 
 class BaseTest(unittest.TestCase):
+    path = pathlib.Path(__file__).parent / "../utils/testConfig.xlsx"
+    client = ExcelUtils.readData(path, 'testConfig', TestData.clientID+1, 1)
+    clientPath = pathlib.Path(__file__).parent / "../utils" / client
 
     def setUp(self):
-        options = Options()
-        # options.add_argument("--headless") # Runs Chrome in headless mode.
-        # options.add_argument('--no-sandbox')  # # Bypass OS security model
-        # options.add_argument('disable-infobars')
-        # options.add_argument("--disable-extensions")
-        options.add_argument("--start-fullscreen")
-        # options.add_argument('--disable-gpu')
-
-        # self.driver = webdriver.Chrome(options=options)
-        self.driver = webdriver.Firefox(executable_path=pathlib.Path(__file__).parent / "../browser/geckodriver")
-        self.driver.set_page_load_timeout(300)
-        self.path = pathlib.Path(__file__).parent / "../utils/Client 1 - Activision.xlsx"
-        # self.driver.get("https://qareceivables.dsidrm.com/signin")
-        self.driver.get(ExcelUtils.readData(self.path, 'LoginData', 2, 3))
+            options = Options()
+            options.add_argument("--start-fullscreen")
+            self.driver = webdriver.Firefox(executable_path=pathlib.Path(__file__).parent / "../browser/geckodriver")
+            self.driver.set_page_load_timeout(300)
+            self.driver.get(ExcelUtils.readData(self.clientPath, 'LoginData', 2, 3))
 
     def tearDown(self):
-        self.driver.close()
+            self.driver.close()
 
 
-class TestPages(object):
+class TestCase(object):
     pass
 
 
 if __name__ == "__main__":
-    suite = unittest.TestLoader().loadTestsFromTestCase(TestPages)
+    suite = unittest.TestLoader().loadTestsFromTestCase(TestCase)
     unittest.TextTestRunner(verbosity=1).run(suite)

@@ -8,6 +8,7 @@ from selenium.webdriver.support.select import Select
 from pages.base_page import BasePage
 from utils import ExcelUtils
 from utils.locators import IPandProductsPageLocators
+from utils.testData import TestData
 
 
 class IPandProductsPage(BasePage):
@@ -67,66 +68,67 @@ class IPandProductsPage(BasePage):
 
 
     def fill_up_add_ip(self):
-        path = pathlib.Path(__file__).parent / "../utils/Client 1 - Activision.xlsx"
-        row = ExcelUtils.getRowCount(path, 'AddIP')
-
+        path = pathlib.Path(__file__).parent / "../utils/testConfig.xlsx"
+        client = ExcelUtils.readData(path, 'testConfig', TestData.clientID + 1, 1)
+        clientPath = pathlib.Path(__file__).parent / "../utils" / client
+        row = ExcelUtils.getRowCount(clientPath, 'AddIP')
         for r in range(2, row + 1):
-            licensor = ExcelUtils.readData(path, 'AddIP', r, 1)
-            intel = ExcelUtils.readData(path, 'AddIP', r, 2)
-            primaryId = ExcelUtils.readData(path, 'AddIP', r, 3)
-            owner = ExcelUtils.readData(path, 'AddIP', r, 4)
-            lang = ExcelUtils.readData(path, 'AddIP', r, 5)
-            ipType = ExcelUtils.readData(path, 'AddIP', r, 6)
-            page2 = IPandProductsPage(self.driver)
-            ts = str(time.time())
+                licensor = ExcelUtils.readData(clientPath, 'AddIP', r, 1)
+                intel = ExcelUtils.readData(clientPath, 'AddIP', r, 2)
+                primaryId = ExcelUtils.readData(clientPath, 'AddIP', r, 3)
+                owner = ExcelUtils.readData(clientPath, 'AddIP', r, 4)
+                lang = ExcelUtils.readData(clientPath, 'AddIP', r, 5)
+                ipType = ExcelUtils.readData(clientPath, 'AddIP', r, 6)
+                page2 = IPandProductsPage(self.driver)
+                ts = str(time.time())
 
-            time.sleep(2)
-            self.driver.switch_to_default_content()
+                time.sleep(2)
+                self.driver.switch_to_default_content()
 
-            time.sleep(2)
-            page2.click_add_new_ip()
+                time.sleep(2)
+                page2.click_add_new_ip()
 
-            time.sleep(5)
-            self.driver.switch_to.frame(0)
+                time.sleep(5)
+                self.driver.switch_to.frame(0)
 
-            time.sleep(1)
-            self.add_licensor()
+                time.sleep(1)
+                self.add_licensor()
 
-            time.sleep(1)
-            self.search_licensor(licensor)
+                time.sleep(1)
+                self.search_licensor(licensor)
 
-            time.sleep(1)
-            self.check_licensor()
+                time.sleep(1)
+                self.check_licensor()
 
-            time.sleep(1)
-            self.done_check_licensor()
+                time.sleep(1)
+                self.done_check_licensor()
 
-            time.sleep(1)
-            self.enter_intel_prop(intel + " " + ts)
+                time.sleep(1)
+                self.enter_intel_prop(intel + " " + ts)
 
-            time.sleep(1)
-            self.enter_primary_id(primaryId + " " + ts)
+                time.sleep(1)
+                self.enter_primary_id(primaryId + " " + ts)
 
-            time.sleep(1)
-            self.enter_owner(owner)
+                time.sleep(1)
+                self.enter_owner(owner)
 
-            time.sleep(1)
-            self.add_ip_type()
+                time.sleep(1)
+                self.add_ip_type()
 
-            time.sleep(1)
-            self.search_ip_type(ipType)
+                time.sleep(1)
+                self.search_ip_type(ipType)
 
-            time.sleep(1)
-            self.check_ip_type()
+                time.sleep(1)
+                self.check_ip_type()
 
-            time.sleep(1)
-            self.done_check_ip_type()
+                time.sleep(1)
+                self.done_check_ip_type()
 
-            time.sleep(1)
-            self.select_language(lang)
+                time.sleep(1)
+                self.select_language(lang)
 
-            time.sleep(1)
-            self.Click_Save_Button()
-            #
-            #
-            # return IPandProductsPage(self.driver)
+                time.sleep(1)
+                self.Click_Save_Button()
+                #
+                #
+                # return IPandProductsPage(self.driver)
