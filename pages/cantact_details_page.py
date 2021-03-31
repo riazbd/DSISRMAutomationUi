@@ -10,14 +10,14 @@ from utils import ExcelUtils
 from utils.locators import ContactsLocator
 from pages.welcome_page import WelcomePage
 from pages.login_page import LoginPage
-from utils.test_cases import test_cases
+from utils.cases import cases
 from utils.testData import TestData
 
 
 class AddContactsPage(BasePage):
     def __init__(self, driver):
         self.locator = ContactsLocator
-        super(AddContactsPage, self).__init__(driver)  # Python2 version
+        super(AddContactsPage, self).__init__(driver)
 
     def click_add_new_contacts(self):
         self.find_element(*self.locator.addContactsLocator).click()
@@ -53,9 +53,8 @@ class AddContactsPage(BasePage):
         self.find_element(*self.locator.saveBtn3).click()
 
     def uploadImage(self):
-        # avatarPath = pathlib.Path(__file__).parent / "../photos/avatar.jpg"
         self.find_element(*self.locator.addPhoto).click()
-        # self.find_element(*self.locator.fileUpload).clear()
+
         time.sleep(3)
         self.find_element(*self.locator.fileUpload).send_keys(os.getcwd()+"/photos/avatar.jpg")
         self.find_element(*self.locator.buttonUplaod).click()
@@ -84,17 +83,6 @@ class AddContactsPage(BasePage):
                 SysUser = ExcelUtils.readData(clientPath, 'AddContacts', r, 6)
                 ts = str(time.time())
 
-                # page = LoginPage(self.driver)
-                # page1 = WelcomePage(self.driver)
-                # # page2 = AddContactsPage(self.driver)
-                # # page3 = BasePage(self.driver)
-                #
-                # time.sleep(3)
-                # page.login()
-                #
-                # time.sleep(2)
-                # #  this line should be corrected
-                # page1.click_companies_contacts_tab()
                 self.driver.switch_to_default_content()
                 time.sleep(2)
                 self.driver.switch_to.frame("ctl00_MainContent_ifrmCompanyContact")
@@ -148,5 +136,3 @@ class AddContactsPage(BasePage):
                 self.Click_Save_Button()
 
                 time.sleep(3)
-                #
-                # return AddContactsPage(self.driver)

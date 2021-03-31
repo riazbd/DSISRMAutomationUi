@@ -22,15 +22,6 @@ class CompaniesAndContactPage(BasePage):
 
     def get_window_handle(self, num):
         return self.driver.window_handles[num]
-    # def window_selection(self):
-    #     p = self.driver.current_window_handle
-    #     # get first child window
-    #     chwnd = self.driver.window_handles
-    #     for w in chwnd:
-    #     #switch focus to child window
-    #         if (w != p):
-    #             self.driver.switch_to.window(w)
-    #         break
 
     def switch_window(self, win):
         return self.driver.switch_to_window(win)
@@ -120,6 +111,4 @@ class CompaniesAndContactPage(BasePage):
 
                 time.sleep(1)
                 self.Click_Save_Button()
-                #
-                #
-                # return CompaniesAndContactPage(self.driver)
+

@@ -1,0 +1,2 @@
+
+['Blocker', 'when user goes to Login page, page should be loaded']

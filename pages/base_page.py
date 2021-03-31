@@ -10,8 +10,6 @@ from utils.testData import TestData
 
 from utils import ExcelUtils
 
-
-# this Base class is serving basic attributes for every single page inherited from Page class
 class BasePage(object):
             def __init__(self, driver, base_url="about:blank"):
                 self.base_url = base_url

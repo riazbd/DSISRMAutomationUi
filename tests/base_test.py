@@ -10,11 +10,6 @@ from utils.testData import TestData
 
 from utils import ExcelUtils
 
-
-# I am using python unittest for asserting cases.
-# In this module, there should be test cases.
-# If you want to run it, you should type: python <module-name.py>
-
 class BaseTest(unittest.TestCase):
     path = pathlib.Path(__file__).parent / "../utils/testConfig.xlsx"
     client = ExcelUtils.readData(path, 'testConfig', TestData.clientID+1, 1)

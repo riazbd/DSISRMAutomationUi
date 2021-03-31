@@ -14,7 +14,7 @@ from utils.testData import TestData
 class ProductPage(BasePage):
     def __init__(self, driver):
         self.locator = AddProductsLocator
-        super(ProductPage, self).__init__(driver)  # Python2 version
+        super(ProductPage, self).__init__(driver)
 
     def click_product(self):
         self.find_element(*self.locator.productsMenuLocator).click()
@@ -96,7 +96,7 @@ class ProductPage(BasePage):
             page2 = ProductPage(self.driver)
             ts = str(time.time())
 
-            time.sleep(2)
+            time.sleep(5)
             self.driver.switch_to_default_content()
 
             time.sleep(2)
@@ -123,11 +123,14 @@ class ProductPage(BasePage):
             time.sleep(2)
             self.click_cancel_btn()
 
-            time.sleep(2)
+            time.sleep(5)
             self.driver.switch_to_default_content()
 
             time.sleep(2)
             self.click_category()
+
+            time.sleep(5)
+            self.driver.switch_to_default_content()
 
             time.sleep(2)
             self.click_addNew2()
@@ -162,6 +165,9 @@ class ProductPage(BasePage):
             time.sleep(2)
             self.click_subcategory()
 
+            time.sleep(5)
+            self.driver.switch_to_default_content()
+
             time.sleep(2)
             self.click_addNew2()
 
@@ -194,6 +200,9 @@ class ProductPage(BasePage):
 
             time.sleep(2)
             self.click_article()
+
+            time.sleep(5)
+            self.driver.switch_to_default_content()
 
             time.sleep(2)
             self.click_addNew2()

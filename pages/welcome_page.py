@@ -5,8 +5,7 @@ from utils.locators import WelcomePageLocators
 class WelcomePage(BasePage):
     def __init__(self, driver):
         self.locator = WelcomePageLocators
-        super(WelcomePage, self).__init__(driver)  # Python2 version
-        # super().__init__(driver)  # Python3 version
+        super(WelcomePage, self).__init__(driver)
 
     def check_page_loaded(self):
         return self.driver.current_url

@@ -14,7 +14,7 @@ from utils.testData import TestData
 class IPandProductsPage(BasePage):
     def __init__(self, driver):
         self.locator = IPandProductsPageLocators
-        super(IPandProductsPage, self).__init__(driver)  # Python2 version
+        super(IPandProductsPage, self).__init__(driver)
 
     def click_add_new_ip(self):
         self.find_element(*self.locator.addNewIP).click()
@@ -61,10 +61,13 @@ class IPandProductsPage(BasePage):
     def select_language(self, language):
         select = Select(self.find_element(*self.locator.Language))
         select.select_by_visible_text(language)
-        # select.select_by_index(4)
+
 
     def Click_Save_Button(self):
         self.find_element(*self.locator.saveButton2).click()
+
+    def click_cancel_btn(self):
+        self.find_element(*self.locator.cancelButton2).click()
 
 
     def fill_up_add_ip(self):
@@ -129,6 +132,6 @@ class IPandProductsPage(BasePage):
 
                 time.sleep(1)
                 self.Click_Save_Button()
-                #
-                #
-                # return IPandProductsPage(self.driver)
+
+                time.sleep(3)
+                self.click_cancel_btn()

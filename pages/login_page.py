@@ -13,7 +13,7 @@ from utils.testData import TestData
 class LoginPage(BasePage):
     def __init__(self, driver):
         self.locator = LoginPageLocators
-        super(LoginPage, self).__init__(driver)  # Python2 version
+        super(LoginPage, self).__init__(driver)
 
     def enter_email(self, username):
         time.sleep(1)
